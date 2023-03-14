@@ -57,7 +57,7 @@
     border-radius: 20px;
     border: var(--LightGray) 1px solid;
     color: var(--LightGray);
-    text-align: justify;
+    text-align: center;
     padding: 20px 20px 20px;
     margin: 30px;
 }
