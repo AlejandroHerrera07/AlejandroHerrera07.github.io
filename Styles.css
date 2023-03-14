@@ -35,10 +35,10 @@
 
 #Ejercicio{
     height: 500px;
-    width: 900px;
     margin-top: 40px;
     margin-bottom: 20px;
     margin-left: 200px;
+    margin-right: 200px;
     padding: 20px;
     padding-bottom: 20px;
     text-align: center;
