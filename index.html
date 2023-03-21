@@ -109,20 +109,18 @@
             let hombresM1 = document.getElementById('hombresM').value;
             let hombresT1 = document.getElementById('hombresT').value;
             let flag = 2;
-            if(total1 === '' || muestra1 === '' || hombresM1 === '' ||hombresT1 === ''){
-                alert("Debe llenar todos los campos")
-                flag = flag + 1;
-            }
             let total2 = parseInt(total1);
             let muestra2 = parseInt(muestra1);
             let hombresM2 = parseInt(hombresM1);
             let hombresT2 = parseInt(hombresT1);
-            
-            if(total2 < hombresT2 || hombresT2 < hombresM2 || hombresM2 > total2 || muestra2 > total2){
+
+            if(total1 === '' || muestra1 === '' || hombresM1 === '' ||hombresT1 === ''){
+                alert("Debe llenar todos los campos")
+            }else if(total2 < hombresT2 || hombresT2 < hombresM2 || hombresM2 > total2 || muestra2 > total2){
                 alert("Recuerde: el número total de enfermeros debe ser mayor al total de hombres, el número total de hombres mayor al de hombres por muestra y la muestra debe ser menor a la cantidad de enfermeros.")
-                flag = flag + 1;
             }else{
                 calculate();
+                limpiar();
             }
 
         }
@@ -183,6 +181,14 @@
                 chart.draw(data, options);
             }
             
+        }
+
+
+        function limpiar(){
+            document.getElementById('total').value = "";
+            document.getElementById('muestra').value = "";
+            document.getElementById('hombresM').value = "";
+            document.getElementById('hombresT').value = "";
         }
 
         function factorial(n){
