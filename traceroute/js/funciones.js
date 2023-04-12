@@ -8,7 +8,7 @@ let saltos_ttl = []
 let estado = true
 let saltos_text = document.querySelector('#saltos-text')
 
-Authorization: Stadia-Auth 0f173ca6-6c5d-437b-9955-46c6d4cef7de
+//Authorization: Stadia-Auth 0f173ca6-6c5d-437b-9955-46c6d4cef7de
 
 //Posición inicial del mapa y el zoom
 let map = L.map('map').setView([4.639386, -74.082412], 6)
