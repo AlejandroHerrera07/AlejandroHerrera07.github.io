@@ -14,7 +14,7 @@ let saltos_text = document.querySelector('#saltos-text')
 let map = L.map('map').setView([4.639386, -74.082412], 6)
 
 //Mostrar el mapa y la opción de realizar zoom a este
-L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png?api_key=0f173ca6_6c5d_437b_9955_46c6d4cef7de', {
+L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png', {
     attribution: '&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
 }).addTo(map);
 
@@ -24,10 +24,10 @@ document.getElementById('select-location').addEventListener('change', function (
     map.off()
     map.remove()
     map = L.map('map').setView([4.639386, -74.082412], 6)
-    // L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png?api_key=0f173ca6_6c5d_437b_9955_46c6d4cef7de', {
+    // L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     //     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
     // }).addTo(map);
-    L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png?api_key=0f173ca6_6c5d_437b_9955_46c6d4cef7de', {
+    L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png', {
         attribution: '&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
     }).addTo(map);
 
@@ -156,10 +156,10 @@ function leerArchivo(e) {
     map.off()
     map.remove()
     map = L.map('map').setView([4.639386, -74.082412], 6)
-    // L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png?api_key=0f173ca6_6c5d_437b_9955_46c6d4cef7de', {
+    // L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     //     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
     // }).addTo(map);
-    L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png?api_key=0f173ca6_6c5d_437b_9955_46c6d4cef7de', {
+    L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png', {
         attribution: '&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
     }).addTo(map);
     // let coords = e.target.value.split(",");
