@@ -1,0 +1,47 @@
+#map{
+    height: 90vh;
+    width: 100vh;
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+    border: solid  #007BFF 4px;
+    border-radius: 4px;
+}
+
+#select-location{
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+    padding: 8px 20%;
+}
+
+body{
+    background-color: #01041D;
+}
+
+hr{
+    background-color: white;
+}
+
+#saltos-text{
+    display: block;
+    margin: auto;
+    background-color: #222222;
+    margin-bottom: 20px;
+    border: solid  #007BFF 4px;
+    border-radius: 4px;
+    resize: none;
+    text-align: center;
+}
+
+#tracert-div{
+    display: flex;
+    margin: 20px;
+}
+
+#file-input-div{
+    margin: 10px;
+    margin-bottom: 20px;
+}
+
+
